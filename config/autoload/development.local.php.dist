@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * Development-only configuration.
+ *
+ * NOTE: Make changes to development.local.php.dist, *NOT* development.local.php
+ *
+ * Run `composer development-enable` to enable development mode.
+ * Run `composer development-disable` to disable development mode.
+ */
+
+use Zend\Expressive\Container;
+use Zend\Expressive\Middleware\ErrorResponseGenerator;
+
+return [
+    'dependencies' => [
+        'invokables' => [
+        ],
+        'factories'  => [
+            ErrorResponseGenerator::class       => Container\WhoopsErrorResponseGeneratorFactory::class,
+            'Zend\Expressive\Whoops'            => Container\WhoopsFactory::class,
+            'Zend\Expressive\WhoopsPageHandler' => Container\WhoopsPageHandlerFactory::class,
+        ],
+    ],
+
+    'whoops' => [
+        'json_exceptions' => [
+            'display'    => true,
+            'show_trace' => true,
+            'ajax_only'  => true,
+        ],
+    ],
+];

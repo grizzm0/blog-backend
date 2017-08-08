@@ -1,0 +1,15 @@
+version: '2'
+services:
+  application:
+    image: grizzm0/blog-backend
+  nginx:
+    image: nginx:stable-alpine
+    depends_on:
+      - application
+    links:
+      - 'application:php-fpm'
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes_from:
+      - application

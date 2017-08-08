@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Development-only configuration.
+ *
+ * NOTE: Make changes to development.config.php.dist, *NOT* development.config.php
+ *
+ * Run `composer development-enable` to enable development mode.
+ * Run `composer development-disable` to disable development mode.
+ */
+
+use Zend\ConfigAggregator\ConfigAggregator;
+
+return [
+    'debug' => true,
+    ConfigAggregator::ENABLE_CACHE => false,
+];
