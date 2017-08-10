@@ -3,14 +3,14 @@
 namespace App\Action;
 
 use Interop\Http\ServerMiddleware\DelegateInterface;
-use Interop\Http\ServerMiddleware\MiddlewareInterface as ServerMiddlewareInterface;
-use Zend\Diactoros\Response\JsonResponse;
+use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Zend\Diactoros\Response\JsonResponse;
 
 /**
  * @package App\Action
  */
-final class PingAction implements ServerMiddlewareInterface
+final class PingAction implements MiddlewareInterface
 {
     /**
      * @param ServerRequestInterface $request
