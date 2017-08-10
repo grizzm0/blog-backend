@@ -5,7 +5,7 @@ RUN apk add --no-cache postgresql-dev && \
     docker-php-ext-install pdo pdo_pgsql
 
 # Setup nginx
-COPY ./docker/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./docker/config/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Setup application
 COPY . /app
