@@ -15,6 +15,7 @@
         "php": "^7.1",
         "dasprid/container-interop-doctrine": "^1.0",
         "roave/security-advisories": "dev-master",
+        "symfony/dotenv": "^3.3",
         "zendframework/zend-component-installer": "^1.0",
         "zendframework/zend-config-aggregator": "^1.0",
         "zendframework/zend-expressive": "^2.0.2",

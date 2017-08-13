@@ -14,6 +14,13 @@ return [
         ],
     ],
     'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+                'params' => [
+                    'url' => getenv('DB_DSN'),
+                ],
+            ],
+        ],
         'driver' => [
             'orm_default' => [
                 'class' => XmlDriver::class,

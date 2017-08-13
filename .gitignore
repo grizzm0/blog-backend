@@ -3,4 +3,5 @@ config/autoload/*.local.php
 config/development.config.php
 dist/
 vendor/
+.env
 docker-compose.override.yml

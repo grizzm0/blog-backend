@@ -7,8 +7,7 @@ if (PHP_SAPI === 'cli-server'
     return false;
 }
 
-chdir(dirname(__DIR__));
-require __DIR__  . '/../vendor/autoload.php';
+require __DIR__ . '/../config/bootstrap.php';
 
 call_user_func(function () {
     $app = (require __DIR__ . '/../config/container.php')->get(\Zend\Expressive\Application::class);
