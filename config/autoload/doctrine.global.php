@@ -1,8 +1,8 @@
 <?php
 
 use ContainerInteropDoctrine\EntityManagerFactory;
+use Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain;
 use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\Mapping\Driver\XmlDriver;
 
 return [
     'dependencies' => [
@@ -23,9 +23,7 @@ return [
         ],
         'driver' => [
             'orm_default' => [
-                'class' => XmlDriver::class,
-                'cache' => 'array',
-                'paths' => './config/doctrine',
+                'class' => MappingDriverChain::class,
             ],
         ],
     ],

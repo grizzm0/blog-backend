@@ -14,8 +14,18 @@ $aggregator = new ConfigAggregator([
     // Include cache configuration
     new ArrayProvider($cacheConfig),
 
-    // Default App module config
+    // Third-party modules
+    Zend\Expressive\Hal\ConfigProvider::class,
+    Zend\Filter\ConfigProvider::class,
+    Zend\Hydrator\ConfigProvider::class,
+    Zend\Paginator\ConfigProvider::class,
+
+    // Application modules
     App\ConfigProvider::class,
+    Blog\ConfigProvider::class,
+
+    // Doctrine modules
+    Blog\Doctrine\ORM\ConfigProvider::class,
 
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
