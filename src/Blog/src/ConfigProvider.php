@@ -33,7 +33,7 @@ class ConfigProvider
                 [
                     '__class__' => RouteBasedCollectionMetadata::class,
                     'collection_class' => PostCollection::class,
-                    'collection_relation' => 'blogPosts',
+                    'collection_relation' => 'posts',
                     'route' => 'blog.post.list',
                 ],
             ],
