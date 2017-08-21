@@ -19,7 +19,7 @@ final class PostRepository extends EntityRepository implements PostRepositoryInt
     /**
      * {@inheritdoc}
      */
-    public function findPostById(string $id): Post
+    public function findPostById(string $id): ?Post
     {
         return $this->find($id);
     }

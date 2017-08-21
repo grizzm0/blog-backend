@@ -16,9 +16,9 @@ interface PostRepositoryInterface extends PaginatorInterface
     /**
      * @param string $id
      *
-     * @return Post
+     * @return Post|null
      */
-    public function findPostById(string $id): Post;
+    public function findPostById(string $id): ?Post;
 
     /**
      * @param int $limit

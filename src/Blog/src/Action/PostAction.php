@@ -63,8 +63,14 @@ final class PostAction implements MiddlewareInterface
             throw new \RuntimeException('No post identifier provided', 400);
         }
 
+        $post = $this->repository->findPostById($id);
+
+        if ($post === null) {
+            throw new \RuntimeException('Post not found', 404);
+        }
+
         $resource = $this->resourceGenerator->fromObject(
-            $this->repository->findPostById($id),
+            $post,
             $request
         );
 
