@@ -27,8 +27,6 @@ return [
             Application::class                       => Container\ApplicationFactory::class,
             ErrorHandler::class                      => Container\ErrorHandlerFactory::class,
             Delegate\NotFoundDelegate::class         => Container\NotFoundDelegateFactory::class,
-            Helper\ServerUrlMiddleware::class        => Helper\ServerUrlMiddlewareFactory::class,
-            Helper\ServerUrlHelper::class            => InvokableFactory::class,
             Helper\UrlHelper::class                  => Helper\UrlHelperFactory::class,
             Helper\UrlHelperMiddleware::class        => Helper\UrlHelperMiddlewareFactory::class,
             Middleware\ErrorResponseGenerator::class => Container\ErrorResponseGeneratorFactory::class,
