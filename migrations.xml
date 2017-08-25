@@ -5,8 +5,9 @@
                      http://doctrine-project.org/schemas/migrations/configuration.xsd">
 
     <name>Migrations</name>
-    <migrations-namespace>Migrations</migrations-namespace>
     <table name="migration" column="version"/>
-    <migrations-directory>./migrations</migrations-directory>
+
+    <migrations-directory>./migration</migrations-directory>
+    <migrations-namespace>Migration</migrations-namespace>
 
 </doctrine-migrations>
