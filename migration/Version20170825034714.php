@@ -6,7 +6,7 @@ use Doctrine\DBAL\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
 
 /**
- * @package Migrations
+ * @package Migration
  */
 class Version20170825034714 extends AbstractMigration
 {
