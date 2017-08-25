@@ -14,6 +14,8 @@
     "require": {
         "php": "^7.1",
         "dasprid/container-interop-doctrine": "^1.0",
+        "doctrine/migrations": "^1.5",
+        "jdorn/sql-formatter": "^1.2",
         "ramsey/uuid": "^3.7",
         "roave/security-advisories": "dev-master",
         "symfony/dotenv": "^3.3",
