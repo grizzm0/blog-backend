@@ -24,14 +24,14 @@ class ConfigProvider
                 [
                     '__class__' => RouteBasedResourceMetadata::class,
                     'resource_class' => Post::class,
-                    'route' => 'blog.post',
+                    'route' => 'blog::post',
                     'extractor' => ClassMethods::class,
                 ],
                 [
                     '__class__' => RouteBasedCollectionMetadata::class,
                     'collection_class' => PostCollection::class,
                     'collection_relation' => 'posts',
-                    'route' => 'blog.post.list',
+                    'route' => 'blog::post-list',
                 ],
             ],
         ];
