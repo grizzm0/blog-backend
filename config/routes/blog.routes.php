@@ -14,4 +14,3 @@ $app->get(
     Blog\Action\PostAction::class,
     'blog.post'
 );
-
