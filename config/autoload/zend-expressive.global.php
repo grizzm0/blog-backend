@@ -6,7 +6,6 @@ use Zend\Expressive\Container;
 use Zend\Expressive\Delegate;
 use Zend\Expressive\Helper;
 use Zend\Expressive\Middleware;
-use Zend\ServiceManager\Factory\InvokableFactory;
 use Zend\Stratigility\Middleware\ErrorHandler;
 
 return [
