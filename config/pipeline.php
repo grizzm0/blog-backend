@@ -1,7 +1,6 @@
 <?php
 
 use Tuupola\Middleware\Cors;
-use Zend\Expressive\Helper\ServerUrlMiddleware;
 use Zend\Expressive\Helper\UrlHelperMiddleware;
 use Zend\Expressive\Middleware\ImplicitHeadMiddleware;
 use Zend\Expressive\Middleware\ImplicitOptionsMiddleware;
