@@ -41,7 +41,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/App/src/",
+            "Application\\": "src/Application/src/",
             "Blog\\": "src/Blog/src/",
             "Blog\\Doctrine\\ORM\\": "src/BlogDoctrineORM/src/",
             "Core\\": "src/Core/src/"

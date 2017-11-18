@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Validator;
+namespace Application\Validator;
 
 final class Uuid
 {

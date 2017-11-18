@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Action;
+namespace Application\Action;
 
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;

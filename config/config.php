@@ -21,7 +21,7 @@ $aggregator = new ConfigAggregator([
     Zend\Paginator\ConfigProvider::class,
 
     // Application modules
-    App\ConfigProvider::class,
+    Application\ConfigProvider::class,
     Blog\ConfigProvider::class,
 
     // Doctrine modules

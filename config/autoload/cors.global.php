@@ -1,6 +1,6 @@
 <?php
 
-use App\Factory\Middleware\CorsMiddlewareFactory;
+use Application\Factory\Middleware\CorsMiddlewareFactory;
 use Tuupola\Middleware\Cors;
 
 return [
