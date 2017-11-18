@@ -2,8 +2,6 @@
 
 /** @var Zend\Expressive\Application $app */
 
-$app->get(
-    '/ping',
-    Application\Action\PingAction::class,
-    'ping'
-);
+use Application\Action;
+
+$app->get('/ping', Action\PingAction::class, 'application::ping');
