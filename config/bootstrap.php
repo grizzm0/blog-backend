@@ -3,4 +3,8 @@
 chdir(dirname(__DIR__));
 require __DIR__  . '/../vendor/autoload.php';
 
-(new \Symfony\Component\Dotenv\Dotenv())->load(__DIR__ . '/../.env');
+$dotEnv = __DIR__ . '/../.env';
+
+if (file_exists($dotEnv)) {
+    (new \Symfony\Component\Dotenv\Dotenv())->load($dotEnv);
+}
