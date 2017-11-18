@@ -13,9 +13,16 @@ class PingActionTest extends TestCase
     public function testResponse()
     {
         $pingAction = new PingAction();
+
+        /** @var ServerRequestInterface $serverRequest */
+        $serverRequest = $this->prophesize(ServerRequestInterface::class)->reveal();
+
+        /** @var DelegateInterface $delegator */
+        $delegator = $this->prophesize(DelegateInterface::class)->reveal();
+
         $response = $pingAction->process(
-            $this->prophesize(ServerRequestInterface::class)->reveal(),
-            $this->prophesize(DelegateInterface::class)->reveal()
+            $serverRequest,
+            $delegator
         );
 
         $json = json_decode((string) $response->getBody());
