@@ -29,9 +29,9 @@ $app->pipe(ErrorHandler::class);
 // - $app->pipe('/api', $apiMiddleware);
 // - $app->pipe('/docs', $apiDocMiddleware);
 // - $app->pipe('/files', $filesMiddleware);
+$app->pipe(Cors::class);
 
 // Register the routing middleware in the middleware pipeline
-$app->pipe(Cors::class);
 $app->pipeRoutingMiddleware();
 $app->pipe(ImplicitHeadMiddleware::class);
 $app->pipe(ImplicitOptionsMiddleware::class);
