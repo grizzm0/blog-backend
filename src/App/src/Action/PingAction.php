@@ -9,9 +9,6 @@ use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\JsonResponse;
 
-/**
- * @package App\Action
- */
 final class PingAction implements MiddlewareInterface
 {
     /**

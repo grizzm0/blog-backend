@@ -7,9 +7,6 @@ namespace App\Factory\Middleware;
 use Psr\Container\ContainerInterface;
 use Tuupola\Middleware\Cors;
 
-/**
- * @package App\Factory\Middleware
- */
 final class CorsMiddlewareFactory
 {
     /**

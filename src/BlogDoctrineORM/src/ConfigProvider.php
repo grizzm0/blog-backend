@@ -8,9 +8,6 @@ use Blog\Doctrine\ORM\Factory\Repository\PostRepositoryFactory;
 use Blog\Repository\PostRepositoryInterface;
 use Doctrine\ORM\Mapping\Driver\XmlDriver;
 
-/**
- * @package Blog\Doctrine\ORM
- */
 class ConfigProvider
 {
     /**

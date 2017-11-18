@@ -7,10 +7,6 @@ namespace Blog\Repository;
 use Blog\Entity\Post;
 use Core\Paginator\PaginatorInterface;
 
-/**
- * Interface PostRepositoryInterface
- * @package Blog\Repository
- */
 interface PostRepositoryInterface extends PaginatorInterface
 {
     /**

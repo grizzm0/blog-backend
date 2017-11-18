@@ -7,9 +7,6 @@ namespace Blog\Doctrine\ORM\Paginator;
 use Core\Paginator\PaginatorInterface;
 use Zend\Paginator\Adapter\AdapterInterface;
 
-/**
- * @package Blog\Doctrine\ORM\Paginator
- */
 final class PaginatorAdapter implements AdapterInterface
 {
     /**

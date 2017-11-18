@@ -7,9 +7,6 @@ namespace Blog\Entity;
 use DateTime;
 use Ramsey\Uuid\Uuid;
 
-/**
- * @package Blog\Entity
- */
 class Post
 {
     /**

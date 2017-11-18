@@ -10,9 +10,6 @@ use Psr\Container\ContainerInterface;
 use Zend\Expressive\Hal\HalResponseFactory;
 use Zend\Expressive\Hal\ResourceGenerator;
 
-/**
- * @package Blog\Factory\Action
- */
 final class PostListActionFactory
 {
     /**

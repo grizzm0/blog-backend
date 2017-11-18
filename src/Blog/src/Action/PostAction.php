@@ -12,9 +12,6 @@ use Psr\Http\Message\ServerRequestInterface;
 use Zend\Expressive\Hal\HalResponseFactory;
 use Zend\Expressive\Hal\ResourceGenerator;
 
-/**
- * @package Blog\Action
- */
 final class PostAction implements MiddlewareInterface
 {
     /**

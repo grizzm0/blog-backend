@@ -8,9 +8,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\JsonResponse;
 
-/**
- * @package AppTest\Action
- */
 class PingActionTest extends TestCase
 {
     public function testResponse()

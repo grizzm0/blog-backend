@@ -6,9 +6,6 @@ namespace App;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
-/**
- * @package App
- */
 class ConfigProvider
 {
     /**

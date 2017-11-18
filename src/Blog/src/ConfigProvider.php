@@ -11,9 +11,6 @@ use Zend\Expressive\Hal\Metadata\RouteBasedCollectionMetadata;
 use Zend\Expressive\Hal\Metadata\RouteBasedResourceMetadata;
 use Zend\Hydrator\ClassMethods;
 
-/**
- * @package Blog
- */
 class ConfigProvider
 {
     /**

@@ -8,9 +8,6 @@ use Blog\Entity\Post;
 use Doctrine\ORM\EntityManager;
 use Psr\Container\ContainerInterface;
 
-/**
- * @package Blog\Doctrine\ORM\Factory\Repository
- */
 final class PostRepositoryFactory
 {
     /**

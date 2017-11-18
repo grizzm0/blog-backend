@@ -6,9 +6,6 @@ namespace Blog\Collection;
 
 use Zend\Paginator\Paginator;
 
-/**
- * @package Blog\Collection
- */
 final class PostCollection extends Paginator
 {
     const PER_PAGE = 25;

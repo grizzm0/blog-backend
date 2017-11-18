@@ -11,7 +11,6 @@ use Doctrine\ORM\EntityRepository;
 use Zend\Paginator\Adapter\AdapterInterface;
 
 /**
- * @package Blog\Doctrine\ORM\Repository
  * @method Post find($id, $lockMode = null, $lockVersion = null)
  */
 final class PostRepository extends EntityRepository implements PostRepositoryInterface

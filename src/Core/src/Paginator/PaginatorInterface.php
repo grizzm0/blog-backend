@@ -7,10 +7,6 @@ namespace Core\Paginator;
 use Blog\Entity\Post;
 use Zend\Paginator\Adapter\AdapterInterface;
 
-/**
- * Interface PaginatorInterface
- * @package Core\Paginator
- */
 interface PaginatorInterface
 {
     /**
