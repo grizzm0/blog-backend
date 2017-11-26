@@ -1,18 +1,21 @@
 version: '2'
 services:
-  application:
-    image: grizzm0/blog-backend
+
+  php:
+    build: .docker/php-fpm
+    volumes:
+      - .:/var/www
+
   nginx:
     image: nginx:stable-alpine
     depends_on:
-      - application
-    links:
-      - 'application:php-fpm'
+      - php
     ports:
       - '80:80'
       - '443:443'
-    volumes_from:
-      - application
+    volumes:
+      - .:/var/www
+
   postgres:
     image: postgres:9.6-alpine
     ports:
